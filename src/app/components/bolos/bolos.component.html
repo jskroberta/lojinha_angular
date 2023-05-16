@@ -1,0 +1,23 @@
+<p>bolos works!</p>
+
+<h1>Bolos</h1>
+<div *ngFor="let bolo of bolosList">
+    <span>{{bolo.name}}</span>
+    <button (click)="adicionarBolo(bolo)">Adicionar</button>
+</div>
+
+<h1>Pedidos</h1>
+
+<div *ngFor="let pedido of pedidoList">
+    <span>{{pedido.name}}</span>
+    <span>{{pedido.price}}</span>
+</div>
+
+<h1>Total</h1>
+R$: <span [innerText]="total"></span>
+<button (click)="excluirTudo()">Limpar</button>
+
+
+<a [routerLink]="['/doces']">
+      Ir para doces
+</a>
