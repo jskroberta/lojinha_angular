@@ -4,13 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BolosComponent } from './components/bolos/bolos.component';
-import { DocesComponent } from './components/doces/doces.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BolosComponent,
-    DocesComponent
+    BolosComponent
   ],
   imports: [
     BrowserModule,

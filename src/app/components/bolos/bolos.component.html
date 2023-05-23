@@ -3,7 +3,7 @@
 <h1>Bolos</h1>
 <div *ngFor="let bolo of bolosList">
     <span>{{bolo.name}}</span>
-    <button (click)="adicionarBolo(bolo)">Adicionar</button>
+    <button (click)="adicionarBolo(bolo)" class="botao-adicionar">+</button>
 </div>
 
 <h1>Pedidos</h1>
@@ -17,7 +17,3 @@
 R$: <span [innerText]="total"></span>
 <button (click)="excluirTudo()">Limpar</button>
 
-
-<a [routerLink]="['/doces']">
-      Ir para doces
-</a>
